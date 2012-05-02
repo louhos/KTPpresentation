@@ -293,3 +293,7 @@ div.three-fourths {
 	display: block;
 	float: left;
 }
+
+h3.inactive {
+	color: #bfbfbf;
+}

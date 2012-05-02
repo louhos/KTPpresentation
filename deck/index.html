@@ -39,9 +39,9 @@
 <!-- Begin slides -->
 <section class="slide" id="title-slide">
 	<h1 class="title">
-		<span>Avoin suomalainen kaupunkidata</span>
+		<span style="font-size: 72px;">Avoin suomalainen kaupunkidata</span>
 		<br />
-		<span style="font-size: 52px; color: #46d1fd">Välineet, haasteet ja tulevaisuus</span>
+		<span style="font-size: 42px; color: #46d1fd">Välineet, haasteet ja tulevaisuus</span>
 		<br />
 		<span style="font-size: 32px; color: #4D4D4D">Kaupunkitutkimuksen päivät 3.5.2012</span>
 	</h1>
@@ -97,42 +97,31 @@
 <section class="slide" id="opendata-definition">
 	<h2>Määritelmä</h2>
 	
-	<ol>
-		<li class="slide" id="opendata-defintion-1">
+	<ol style="padding: 60px 0 0 0;">
+		<li>
 			<h3>Tekninen saatavuus</h3>
-			<p>Data on julkaistu myös sellaisessa muodossa, että sitä on helppo käsitellä 
-			tietokoneohjelmistoilla ja hyödyntää osana verkkopalveluita. </p>
 		</li>
-		<li class="slide" id="opendata-defintion-2">
+		<li>
 			<h3>Maksuttomuus</h3>
-			<p>Dataa voi käyttää maksutta. Maksuttomuus helpottaa erityisesti 
-			ensikosketuksen saamista dataan. Se mahdollistaa datan hyödyntämiseen liittyvät 
-			kokeilut ilman budjettibyrokratiaa. </p>
 		</li>
-		<li class="slide" id="opendata-defintion-3">
+		<li>
 			<h3>Uudelleenkäytön sallivat käyttöehdot</h3>
-			<p>Julkaisija sallii aineiston uudelleenkäytön ja kertoo sen selkeästi aineiston 
-			yhteydestä löytyvillä käyttöehdoilla. Käyttöoikeuksien selvittäminen – käyttöehtojen 
-			puuttuessa – voi monesti olla niin työlästä, että datan hyödyntämisestä luovutaan.</p>
 		</li>
-		<li class="slide" id="opendata-defintion-4">
+		<li>
 			<h3>Löydettävyys</h3>
-			<p>Aineiston olemassaolon ja sijainnin tulee olla yleisesti tunnettu. Datan 
-			löydettävyyttä voidaan parantaa lisäämällä se julkiseen datakatalogiin.</p>
 		</li>
-		<li class="slide" id="opendata-defintion-5">
+		<li>
 			<h3>Ymmärrettävyys</h3>
-			<p>Datan rakenne ja merkitys on kuvailtu ymmärrettävästi sen käyttäjille. 
-			Ilman kuvailua data jää merkityksettömäksi, eikä sitä pystytä hyödyntämään.</p>
 		</li>
 	
 	</ol>
 </section>
 	
-
+<!--
 <section class="slide" id="link-hsy">
 	<iframe src="http://www.hsy.fi/seututieto/kaupunki/paikkatiedot/Sivut/Avoindata.aspx" width="100%" height="1000px"></iframe>
 </section>
+-->
 
 <section class="slide" id="link-suomifi">
 	<iframe src="http://www.suomi.fi/suomifi/tyohuone/yhteiset_palvelut/avoin_data/" width="100%" height="1000px"></iframe>
@@ -187,42 +176,24 @@
 		</li>
 	</ul>
 	
-	<div class="img-block right">
-		<img src="../images/esim_aaltokymppi.png" width="400px;" /> 
-		<img src="../images/esim_top10.png" width="400px;" />
-	</div>
+		<img style="float: left; " src="../images/esim_aaltokymppi.png" width="300px;" /> 
+		<img style="float: left; " src="../images/esim_top10.png" width="300px;" />
 	
 </section>
 
 <section class="slide" id="why-r-1">
 	<h2>Miksi R?</h2>
 	
-	<img src="../images/RLogo.png" style="float: left; margin: 30px 0 0 50px;"/>
-	
-	<ul class="spacious">
-		<li>
-			<h3>Vuorovaikutteinen ja modulaarinen (avoin data, tilastotiede, visualisointi)</h3>
-		</li>
-		<li>
-			<h3>Tuhansia analyysimenetelmiä</h3>
-		</li>
-	</ul>
-	
-</section>
-
-<section class="slide" id="r-market-share">
-	<img style="margin-top: 75px;" src="http://librestats.com/wp-content/uploads/2012/04/marketshare.png" />
-	<p style="text-align: center;">Lähde: wrathematics @ librestats (http://librestats.com/) </p>
-</section>
-
-<section class="slide" id="r-market-share">
-	<img src="http://librestats.com/wp-content/uploads/2012/04/marketshare.png" />
-	<script src="https://gist.github.com/2520585.js?file=r_market.R"></script>	
-</section>
-
-<section class="slide" id="why-r-2">
-	<h2>Miksi R?</h2>
-	
+	<table>
+		<tr>
+			<td>
+				<img src="../images/RLogo.png" style="display: inline; margin: 10px 20px 0 50px;"/>
+			</td>
+			<td>
+				<a style="font-size: 52px; margin: 60px 0 0 20px;" href="http://cran.r-project.org"><br />http://cran.r-project.org</a>
+			</td>
+		</tr>
+	</table>
 	
 	<ul class="spacious">
 		<li>
@@ -234,11 +205,49 @@
 		<li>
 			<h3>Grafiikkaominaisuudet</h3>
 		</li>
+	</ul>
+	
+</section>
+
+<section class="slide" id="r-market-share">
+	<img style="margin-top: 75px;" src="http://librestats.com/wp-content/uploads/2012/04/marketshare.png" />
+	<p style="text-align: center;">Lähde: wrathematics @ librestats (http://librestats.com/) </p>
+</section>
+
+<section class="slide" id="why-r-2">
+	<h2>Miksi R?</h2>
+	
+	<table>
+		<tr>
+			<td>
+				<img src="../images/RLogo.png" style="display: inline; margin: 10px 20px 0 50px;"/>
+			</td>
+			<td>
+				<a style="font-size: 52px; margin: 60px 0 0 20px;" href="http://cran.r-project.org"><br />http://cran.r-project.org</a>
+			</td>
+		</tr>
+	</table>
+	
+	<ul class="spacious">
+		<li>
+			<h3 class="inactive">Vuorovaikutteinen ja modulaarinen (avoin data, tilastotiede, visualisointi)</h3>
+		</li>
+		<li>
+			<h3 class="inactive">Tuhansia analyysimenetelmiä</h3>
+		</li>
+		<li>
+			<h3 class="inactive">Grafiikkaominaisuudet</h3>
+		</li>
 		<li>
 			<h3>Avoin lähdekoodi sekä laaja käyttäjä- ja kehittäjäyhteisö</h3>
 		</li>
 	</ul>
 	
+</section>
+
+<section class="slide" id="r-market-share">
+	<img src="http://librestats.com/wp-content/uploads/2012/04/marketshare.png" />
+	<script src="https://gist.github.com/2520585.js?file=r_market.R"></script>	
 </section>
 
 <section class="slide" id="link-rstudio">
@@ -304,7 +313,7 @@
 
 <section class="slide" id="example-1-2">
 	<h2>Uusi kuntajako: yhdistely ja visualisointi</h2>
-	<iframe src="http://www.gispo.fi/ohjeita/AreaDissolve" width="100%" height="1000px"></iframe>
+	<iframe src="http://www.gispo.fi/ohjeita/AreaDissolve" width="100%" height="1000px">Not available</iframe>
 	
 </section>
 
@@ -403,7 +412,7 @@
 
 <section class="slide" id="example-3-2">
 	
-	<iframe src="http://antagomir.github.com/Presidentti2012_MotionChart_20120212.html" width="100%" height="800px"></iframe>
+	<iframe src="http://antagomir.github.com/Presidentti2012_MotionChart_20120212.html" width="100%" height="800px">Not available</iframe>
 	
 </section>
 	
@@ -434,12 +443,12 @@
 	</div>
 	
 	<div class="two-thirds">
-		<img src="../images/osm_puistot.png"
+		<img src="../images/osm_puistot.png">
 	</div>
 	
 </section>
 	
-<section class="slide" id="title-slide-blogi">
+<section class="slide" id="esim-opasnet">
 	<h1 class="title">
 		<span style="color: #46d1fd;">Tulevaisuus</span>
 		<br />
@@ -447,16 +456,85 @@
 	</h1>
 </section>
 
+<section class="slide" id="link-opasnet">
+	<iframe src="http://en.opasnet.org/w/Population_of_Finland#Formula" width="100%" height="1000px">Not available</iframe>
+</section>
+
+
 <section class="slide" id="link-louhos">
-	<iframe src="http://louhos.github.com/" width="100%" height="1000px"></iframe>
+	<iframe src="http://louhos.github.com/" width="100%" height="1000px">Not available</iframe>
 </section>
 
 <section class="slide" id="link-octocat">
-	<img src="http://octodex.github.com/images/baracktocat.jpg" />
+	
+	<h2>Tutkimusyhteistyö</h2>
+	
+	
+	<ul class="spacious">
+		<li>
+			<h3>Valmista R-koodia? Paketoidaan ja julkaistaan se!</h3>
+		</li>
+		<li>
+			<h3>Mielenkiintoiset tutkimuskysymykset</h3>
+		</li>
+		<li>
+			<h3>Opinnäytetyö</h3>
+		</li>
+		<li>
+			<h3>Kirjoita Louhos-blogiin</h3>
+		</li>
+	</ul>
+	
+	<img class="specialImage bottom right" style="margin-right: 30px;" src="http://octodex.github.com/images/baracktocat.jpg" width="300px" />
 </section>
 
+<section class="slide" id="thanks">
+	
+	<h2>Kiitos!</h2>
+	
+	
+	<ul class="spacious">
+		<li>
+			<h3>Apps4Finland</h3>
+		</li>
+		<li>
+			<h3>Helsinki Region Infoshare</h3>
+		</li>
+		<li>
+			<h3>Forum Virium Helsinki</h3>
+		</li>
+		<li>
+			<h3>Datan avaajat (MML, HSY, Tilastokeskus)</h3>
+		</li>
+		<li>
+			<h3>R-kehittäjät, avoimen datan yhteisö</h3>
+		</li>
+	</ul>
+	
+</section>
 
-
+<section class="slide" id="contact">
+	<ol class="spacious">
+		<li>
+			<strong>Sähköposti: </strong> sorvi-admin - at - lists.r-forge.r-project.org
+		</li>
+		<li>
+			<strong>IRC: </strong><a href="http://webchat.xs4all.nl">!louhos@IRCnet</a>
+		</li>
+		<li>
+			<strong>Twitter: </strong><a href="https://twitter.com/#!/search/%23louhos">hashtag <i>#louhos</i></a>
+		</li>
+		<li>
+			<strong>GitHub: </strong><a href="https://github.com/louhos">https://github.com/louhos</a>
+		</li>
+		<li>
+			<strong>Blogi: </strong><a href="https://louhos.wordpress.com">https://louhos.wordpress.com</a>
+		</li>
+		<li>
+			<strong>Wiki: </strong><a href="https://github.com/louhos/soRvi-dev/wiki">https://github.com/louhos/soRvi-dev/wiki</a>
+		</li>
+	</ol>
+</section>
 
 <!-- deck.navigation snippet -->
 <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
